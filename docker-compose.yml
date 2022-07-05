@@ -1,0 +1,33 @@
+services:
+  postgresqldb:
+    container_name: postgresql-cont
+    image: postgres
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=adminpass
+    ports:
+      - 5432:5432
+    healthcheck:
+      test: ["CMD", "curl", "-f", "localhost:5432"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - dbcon
+
+  webapi:
+    container_name: webapi-cont
+    build: ./Webapi/
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 5000:80
+    depends_on:
+      - postgresqldb
+    restart: on-failure
+    networks:
+      - dbcon
+
+networks:
+  dbcon:
+    driver: bridge

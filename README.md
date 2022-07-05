@@ -1,0 +1,1 @@
+Test ASP.NET Core web API written while learning creating self-contained apps with Docker.

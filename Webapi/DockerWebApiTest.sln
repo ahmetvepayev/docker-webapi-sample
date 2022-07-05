@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerWebApiTest", "Api\DockerWebApiTest.csproj", "{691C3B2A-6BDE-401F-A381-8A99BA0DAF63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{ECE134FF-AA5F-4730-9BDC-025FD17C5456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{C750D369-177A-4175-B55E-93E892D83FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{691C3B2A-6BDE-401F-A381-8A99BA0DAF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691C3B2A-6BDE-401F-A381-8A99BA0DAF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691C3B2A-6BDE-401F-A381-8A99BA0DAF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691C3B2A-6BDE-401F-A381-8A99BA0DAF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE134FF-AA5F-4730-9BDC-025FD17C5456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE134FF-AA5F-4730-9BDC-025FD17C5456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE134FF-AA5F-4730-9BDC-025FD17C5456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE134FF-AA5F-4730-9BDC-025FD17C5456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C750D369-177A-4175-B55E-93E892D83FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C750D369-177A-4175-B55E-93E892D83FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C750D369-177A-4175-B55E-93E892D83FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C750D369-177A-4175-B55E-93E892D83FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
