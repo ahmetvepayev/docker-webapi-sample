@@ -26,6 +26,9 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    // Performs database migrations during app starup and seeds some sample data
+    // The database migration is done assuming that there will be only one instance of the webapi running
+    // and that no other application will perform migrations to the database
     app.InitializeDb();
     
     app.UseSwagger();
